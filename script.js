@@ -2,12 +2,19 @@
 console.log("Connection successful!")
 
 function getComputerChoice(){
-  let a = "rock"
-  let b = "paper"
-  let c = "scissors"
+let randomNum = Math.random()
 
-  return (a | b | c)
+if (randomNum < 0.33){
+    console.log("rock")
+} else if (randomNum < 0.66) {
+    console.log("paper")
+}
+else {
+    console.log("scissors")
+}
 }
 
-Math.random(getComputerChoice)
+// prompt user for their response
+let user = prompt("Rock, Paper, Scissors")
+
 getComputerChoice()
