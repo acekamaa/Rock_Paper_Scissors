@@ -1,0 +1,9 @@
+#finalResult {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#playAgainBtn {
+    display: none;
+    margin-top: 10px;
+}
