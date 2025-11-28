@@ -10,8 +10,8 @@ const playAgainBtn = document.getElementById("playAgainBtn");
 function playRound(playerSelection) {
   const choices = ['rock', 'paper', 'scissors'];
   const emojis = {
-    rock: "🪨",
-    paper: "📄",
+    rock: "🥌",
+    paper: "📃",
     scissors: "✂️"
   };
 
@@ -49,7 +49,8 @@ function checkWinner() {
         playerScore === 5
           ? "🏆 Congratulations! You won the game!"
           : "💻 The computer wins! Better luck next time.";
-      playAgainBtn.style.display = "inline-block";
+      playAgainBtn.style.display = "flex";
+      playAgainBtn.style.justifyContent = "center";
     }, 1000); // Delay for dramatic effect
   }
 }
